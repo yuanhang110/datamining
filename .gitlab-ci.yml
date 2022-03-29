@@ -1,0 +1,29 @@
+# This file is a template, and might need editing before it works on your project.
+# This file is a template demonstrating the `script` keyword.
+# Learn more about this keyword here: https://docs.gitlab.com/ee/ci/yaml/README.html#script
+
+# After committing this template, visit CI/CD > Jobs to see the script output.
+image: chungc/cs5483-notebook:0.2.6
+
+jupyter-book:
+  stage: build
+  tags: ['cs5483']
+  script:
+    # provide a shell script as argument for this keyword.
+    - echo "Building JupyterBook"
+    - jupyter-book clean docs
+    - jupyter-book build docs
+  artifacts:
+    paths:
+      - docs/_build
+
+pages:
+  stage: deploy
+  tags: ['cs5483']
+  script:
+    - mv docs/_build/html public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

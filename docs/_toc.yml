@@ -1,0 +1,16 @@
+format: jb-book
+root: Abstract.ipynb
+
+chapters:
+- file: Introduction.ipynb
+- file: Preliminaries.ipynb
+- file: Build.ipynb
+- file: Contents.ipynb
+- file: References.ipynb
+
+# parts: 
+#   - caption: Tutorial 1
+#     numbered: false
+#     chapters:
+#     - file: Tutorial1/Setup.md
+#     - file: Tutorial1/Data Files.md
