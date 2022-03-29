@@ -14,7 +14,7 @@ kernelspec:
 
 # Jupyter Environment for CS5483 Data Warehousing and Data Mining
 
-*Author: CHAN, Chung*
+*Author:group1*
 
 +++ {"tags": []}
 
