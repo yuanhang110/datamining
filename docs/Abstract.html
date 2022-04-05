@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/action", "[tex]/ams", "[tex]/amscd", "[tex]/bbox", "[tex]/boldsymbol", "[tex]/braket", "[tex]/bussproofs", "[tex]/cancel", "[tex]/centernot", "[tex]/color", "[tex]/colorv2", "[tex]/colortbl", "[tex]/enclose", "[tex]/extpfeil", "[tex]/gensymb", "[tex]/html", "[tex]/mathtools", "[tex]/mhchem", "[tex]/newcommand", "[tex]/noerrors", "[tex]/noundefined", "[tex]/physics", "[tex]/upgreek", "[tex]/unicode", "[tex]/verb", "[tex]/configmacros", "[tex]/tagformat", "[tex]/textcomp", "[tex]/textmacros", "[tex]/setoptions", "[tex]/physics"]}, "tex": {"macros": {"mc": ["\\mathcal{#1}", 1], "rsfs": ["\\mathsc{#1}", 1], "R": ["\\mathsf{#1}", 1], "M": ["\\boldsymbol{#1}", 1], "RM": ["\\R{\\M{#1}}", 1]}, "packages": ["base", "action", "ams", "amscd", "bbox", "boldsymbol", "braket", "bussproofs", "cancel", "cases", "centernot", "color", "colortbl", "enclose", "extpfeil", "gensymb", "html", "mathtools", "mhchem", "newcommand", "noerrors", "noundefined", "upgreek", "unicode", "verb", "configmacros", "tagformat", "textcomp", "textmacros", "physics"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Introduction" href="Introduction.html" />
@@ -160,10 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="_sources/Abstract.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
         <a class="dropdown-buttons" href="_sources/Abstract.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
@@ -181,14 +180,14 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/ccha23/cs5483jupyter"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/https://github.com/yuanhang110/datamining"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ccha23/cs5483jupyter/issues/new?title=Issue%20on%20page%20%2FAbstract.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/https://github.com/yuanhang110/datamining/issues/new?title=Issue%20on%20page%20%2FAbstract.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ccha23/cs5483jupyter/edit/main/docs/Abstract.md"><button
+        <a class="edit-button" href="https://github.com/yuanhang110/datamining/edit/main/docs/Abstract.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -202,29 +201,6 @@ const thebe_selector_output = ".output, .cell_output"
             class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ccha23/cs5483jupyter/main?urlpath=lab/tree/docs/Abstract.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        <a class="jupyterhub-button" href="https://cs5483.cs.cityu.edu.hk/hub/user-redirect/git-pull?repo=https://github.com/ccha23/cs5483jupyter&urlpath=lab/tree/cs5483jupyter/docs/Abstract.ipynb&branch=main"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
-                data-placement="left"><img class="jupyterhub-button-logo"
-                    src="_static/images/logo_jupyterhub.svg"
-                    alt="Interact on JupyterHub">JupyterHub</button></a>
-        
-        
-        
-    </div>
-</div>
 
         </div>
 
@@ -608,8 +584,6 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Part 1. Introduction <a id="chapter1"></a><a class="headerlink" href="#part-1-introduction-a-id-chapter1-a" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>According to the CDC, heart disease is one of the leading causes of death for people of most races in the US (African Americans, American Indians and Alaska Natives, and white people). About half of all Americans (47%) have at least 1 of 3 key risk factors for heart disease: high blood pressure, high cholesterol, and smoking. Other key indicators include diabetic status, obesity (high BMI), not getting enough physical activity or drinking too much alcohol. Detecting and preventing the factors that have the greatest impact on heart disease is very important in healthcare. Computational developments, in turn, allow the application of machine learning methods to detect “patterns” from the data that can predict a patient’s condition.</p></li>
-</ul>
-<ul class="simple">
 <li><p>The dataset come from the CDC and is a major part of the Behavioral Risk Factor Surveillance System (BRFSS), which conducts annual telephone surveys to gather data on the health status of U.S. residents. As the CDC describes: “Established in 1984 with 15 states, BRFSS now collects data in all 50 states as well as the District of Columbia and three U.S. territories. BRFSS completes more than 400,000 adult interviews each year, making it the largest continuously conducted health survey system in the world.”. The most recent dataset (as of February 15, 2022) includes data from 2020. It consists of 401,958 rows and 279 columns. The vast majority of columns are questions asked to respondents about their health status.</p></li>
 </ul>
 </div>
@@ -617,9 +591,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Part 2.Data Process and Description <a id="chapter2"></a><a class="headerlink" href="#part-2-data-process-and-description-a-id-chapter2-a" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="import-dependences">
 <h2>Import dependences<a class="headerlink" href="#import-dependences" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import package</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import package</span>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">os</span>
 
@@ -635,18 +607,10 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -660,78 +624,17 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
-<span class="o">%</span><span class="k">store</span> -r
+<span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span>
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="pre-processing-a-id-section-2-1-a">
 <h2>2.1 Pre-processing  <a id="section_2_1"></a><a class="headerlink" href="#pre-processing-a-id-section-2-1-a" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import source data</span>
-<span class="n">heart_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./heart_2020_cleaned.csv&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import source data</span>
+<span class="n">heart_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./data/heart_2020_cleaned.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/2232131370.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># import source data</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">heart_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./heart_2020_cleaned.csv&quot;</span><span class="p">)</span>
-
-<span class="nn">/opt/conda/lib/python3.9/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span> 
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">/opt/conda/lib/python3.9/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">678</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">679</span> 
-<span class="ne">--&gt; </span><span class="mi">680</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">681</span> 
-<span class="g g-Whitespace">    </span><span class="mi">682</span> 
-
-<span class="nn">/opt/conda/lib/python3.9/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">573</span> 
-<span class="g g-Whitespace">    </span><span class="mi">574</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">575</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">576</span> 
-<span class="g g-Whitespace">    </span><span class="mi">577</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">/opt/conda/lib/python3.9/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">931</span> 
-<span class="g g-Whitespace">    </span><span class="mi">932</span>         <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="ne">--&gt; </span><span class="mi">933</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">934</span> 
-<span class="g g-Whitespace">    </span><span class="mi">935</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/opt/conda/lib/python3.9/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, f, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1215</span>             <span class="c1"># &quot;Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1216</span>             <span class="c1"># , &quot;str&quot;, &quot;bool&quot;, &quot;Any&quot;, &quot;Any&quot;, &quot;Any&quot;, &quot;Any&quot;, &quot;Any&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1217</span>             <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>  <span class="c1"># type: ignore[call-overload]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1218</span>                 <span class="n">f</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1219</span>                 <span class="n">mode</span><span class="p">,</span>
-
-<span class="nn">/opt/conda/lib/python3.9/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">787</span>         <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">788</span>             <span class="c1"># Encoding</span>
-<span class="ne">--&gt; </span><span class="mi">789</span>             <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">790</span>                 <span class="n">handle</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">791</span>                 <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;./heart_2020_cleaned.csv&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># De duplication, de unmaned, de Nan</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># De duplication, de unmaned, de Nan</span>
 <span class="c1"># When keep = &#39;first&#39;, keep the sample when the label appears for the first time, and discard all repeated labels.</span>
 <span class="c1"># When inplace = false, return the dataframe after removing duplicates, and the original dataframe will not be changed.</span>
 <span class="c1"># dropna(axis=1,how=&#39;all&#39;). Dropna (axis = 0, how =&#39;Any &#39;) deletes columns that are all Nan and any rows with Nan</span>
@@ -745,52 +648,45 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">return</span> <span class="n">cleaned_data</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># clean data</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># clean data</span>
 <span class="n">heart_df</span> <span class="o">=</span> <span class="n">cleanData</span><span class="p">(</span><span class="n">heart_df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/4228358717.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># clean data</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">heart_df</span> <span class="o">=</span> <span class="n">cleanData</span><span class="p">(</span><span class="n">heart_df</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;heart_df&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 <div class="section" id="preliminary-data-analysis-a-id-section-2-2-a">
 <h2>2.2 Preliminary data analysis  <a id="section_2_2"></a><a class="headerlink" href="#preliminary-data-analysis-a-id-section-2-2-a" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dataset&#39;s information</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dataset&#39;s information</span>
 <span class="n">heart_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/448953833.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Dataset&#39;s information</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">heart_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-
-<span class="ne">NameError</span>: name &#39;heart_df&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 301717 entries, 0 to 319794
+Data columns (total 18 columns):
+ #   Column            Non-Null Count   Dtype  
+---  ------            --------------   -----  
+ 0   HeartDisease      301717 non-null  object 
+ 1   BMI               301717 non-null  float64
+ 2   Smoking           301717 non-null  object 
+ 3   AlcoholDrinking   301717 non-null  object 
+ 4   Stroke            301717 non-null  object 
+ 5   PhysicalHealth    301717 non-null  float64
+ 6   MentalHealth      301717 non-null  float64
+ 7   DiffWalking       301717 non-null  object 
+ 8   Sex               301717 non-null  object 
+ 9   AgeCategory       301717 non-null  object 
+ 10  Race              301717 non-null  object 
+ 11  Diabetic          301717 non-null  object 
+ 12  PhysicalActivity  301717 non-null  object 
+ 13  GenHealth         301717 non-null  object 
+ 14  SleepTime         301717 non-null  float64
+ 15  Asthma            301717 non-null  object 
+ 16  KidneyDisease     301717 non-null  object 
+ 17  SkinCancer        301717 non-null  object 
+dtypes: float64(4), object(14)
+memory usage: 43.7+ MB
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">countp</span><span class="p">(</span><span class="n">var</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">countp</span><span class="p">(</span><span class="n">var</span><span class="p">):</span>
 
     <span class="c1"># Plot</span>
     <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
@@ -812,39 +708,13 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Countplot for the variable &quot;HeartDisease&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Countplot for the variable &quot;HeartDisease&quot;</span>
 <span class="n">countp</span><span class="p">(</span><span class="n">var</span><span class="o">=</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/313310150.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Countplot for the variable &quot;HeartDisease&quot;</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">countp</span><span class="p">(</span><span class="n">var</span><span class="o">=</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">)</span>
-
-<span class="nn">/tmp/ipykernel_1074/3508383577.py</span> in <span class="ni">countp</span><span class="nt">(var)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="c1"># Plot</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">5</span>     <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">heart_df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">var</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;Set1&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="c1"># Personalization</span>
-
-<span class="ne">NameError</span>: name &#39;heart_df&#39; is not defined
-</pre></div>
-</div>
-<img alt="_images/Abstract_17_1.png" src="_images/Abstract_17_1.png" />
-</div>
-</div>
+<p><img alt="png" src="_images/output_17_0.png" /></p>
 <p>The figure above shows a significant imbalance between people with and without heart disease in the data set. Therefore, the EDA of classified data will use standardized values.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">barp</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">barp</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 
     <span class="c1"># Plot</span>
     <span class="n">data_normalized</span> <span class="o">=</span> <span class="p">(</span>
@@ -883,38 +753,13 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Barplot for &quot;Smoking&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Barplot for &quot;Smoking&quot;</span>
 <span class="n">barp</span><span class="p">(</span><span class="s2">&quot;Smoking&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/918187763.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Barplot for &quot;Smoking&quot;</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">barp</span><span class="p">(</span><span class="s2">&quot;Smoking&quot;</span><span class="p">)</span>
-
-<span class="nn">/tmp/ipykernel_1074/4038674193.py</span> in <span class="ni">barp</span><span class="nt">(var, order)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="c1"># Plot</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">data_normalized</span> <span class="o">=</span> <span class="p">(</span>
-<span class="ne">----&gt; </span><span class="mi">5</span>         <span class="n">heart_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">var</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span>         <span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span>         <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;Percentage&quot;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;heart_df&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_20_0.png" /></p>
 <p>The chart above shows the significant prevalence of heart disease in people with smoking habits.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">barp</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">barp</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="c1"># Plot</span>
     <span class="n">data_normalized</span> <span class="o">=</span> <span class="p">(</span>
         <span class="n">heart_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">var</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span>
@@ -948,34 +793,11 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Barplot for &quot;AlcoholDrinking&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Barplot for &quot;AlcoholDrinking&quot;</span>
 <span class="n">barp</span><span class="p">(</span><span class="s2">&quot;AlcoholDrinking&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/931602972.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Barplot for &quot;AlcoholDrinking&quot;</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">barp</span><span class="p">(</span><span class="s2">&quot;AlcoholDrinking&quot;</span><span class="p">)</span>
-
-<span class="nn">/tmp/ipykernel_1074/4151847318.py</span> in <span class="ni">barp</span><span class="nt">(var, order)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="c1"># Plot</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">data_normalized</span> <span class="o">=</span> <span class="p">(</span>
-<span class="ne">----&gt; </span><span class="mi">4</span>         <span class="n">heart_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">var</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>         <span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span>         <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;Percentage&quot;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;heart_df&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_23_0.png" /></p>
 <p>The chart shows that the prevalence of heart disease is very high for people who do not drink alcohol.</p>
 <p>Description of each variable in the dataset:</p>
 <table class="colwidths-auto table">
@@ -1044,9 +866,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="variable-correlation-analysis-a-id-section-2-3-a">
 <h2>2.3 Variable correlation analysis <a id="section_2_3"></a><a class="headerlink" href="#variable-correlation-analysis-a-id-section-2-3-a" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">data_convert</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">data_convert</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">!=</span> <span class="n">pd</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;input is not a pandas dataframe&quot;</span><span class="p">)</span>
     <span class="n">working_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -1064,42 +884,16 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">return</span> <span class="n">working_df</span><span class="p">,</span> <span class="n">converted_columns</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="p">,</span> <span class="n">conversion_index</span> <span class="o">=</span> <span class="n">data_convert</span><span class="p">(</span><span class="n">heart_df</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="p">,</span> <span class="n">conversion_index</span> <span class="o">=</span> <span class="n">data_convert</span><span class="p">(</span><span class="n">heart_df</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/3561032001.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">cleaned_df</span><span class="p">,</span> <span class="n">conversion_index</span> <span class="o">=</span> <span class="n">data_convert</span><span class="p">(</span><span class="n">heart_df</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;heart_df&#39; is not defined
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis_r&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis_r&quot;</span><span class="p">)</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/736391226.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis_r&quot;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;cleaned_df&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_29_1.png" /></p>
 <p>Using the thermodynamic diagram, we can intuitively see the correlation between various variables. It can be seen that diffwalking is highly correlated with physical health. The correlation between heartdisease and agecategory is small.</p>
 </div>
 </div>
@@ -1108,73 +902,180 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="knn-a-id-section-3-1-a">
 <h2>3.1 KNN<a id="section_3_1"></a><a class="headerlink" href="#knn-a-id-section-3-1-a" title="Permalink to this headline">¶</a></h2>
 <p>before we build the model, let’s observe the dataset agian</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1885385718.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">cleaned_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.dataframe tbody tr th {
+    vertical-align: top;
+}
 
-<span class="ne">NameError</span>: name &#39;cleaned_df&#39; is not defined
+.dataframe thead th {
+    text-align: right;
+}
 </pre></div>
 </div>
-</div>
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>HeartDisease</th>
+      <th>BMI</th>
+      <th>Smoking</th>
+      <th>AlcoholDrinking</th>
+      <th>Stroke</th>
+      <th>PhysicalHealth</th>
+      <th>MentalHealth</th>
+      <th>DiffWalking</th>
+      <th>Sex</th>
+      <th>AgeCategory</th>
+      <th>Race</th>
+      <th>Diabetic</th>
+      <th>PhysicalActivity</th>
+      <th>GenHealth</th>
+      <th>SleepTime</th>
+      <th>Asthma</th>
+      <th>KidneyDisease</th>
+      <th>SkinCancer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>16.60</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3.0</td>
+      <td>30.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>20.34</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>26.58</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>20.0</td>
+      <td>30.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>8.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>24.21</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>6.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>23.71</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>28.0</td>
+      <td>0.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 <p>When we use KNN model, we need to calculate Euclidean distance. If a feature range is very large, the distance calculation mainly depends on this feature, which is contrary to the actual situation. We notice that there are some values of attributes are not with the same boundary, so we need to do the standardization. Here we use the StandardScaler to let the data conform to the positive distribution.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">,</span> <span class="s2">&quot;MentalHealth&quot;</span><span class="p">,</span> <span class="s2">&quot;PhysicalHealth&quot;</span><span class="p">,</span> <span class="s2">&quot;SleepTime&quot;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">num_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">,</span> <span class="s2">&quot;MentalHealth&quot;</span><span class="p">,</span> <span class="s2">&quot;PhysicalHealth&quot;</span><span class="p">,</span> <span class="s2">&quot;SleepTime&quot;</span><span class="p">]</span>
 <span class="n">Scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
 <span class="n">cleaned_df</span><span class="p">[</span><span class="n">num_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">Scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">cleaned_df</span><span class="p">[</span><span class="n">num_cols</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1945242592.py</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">num_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">,</span> <span class="s2">&quot;MentalHealth&quot;</span><span class="p">,</span> <span class="s2">&quot;PhysicalHealth&quot;</span><span class="p">,</span> <span class="s2">&quot;SleepTime&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">Scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">cleaned_df</span><span class="p">[</span><span class="n">num_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">Scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">cleaned_df</span><span class="p">[</span><span class="n">num_cols</span><span class="p">])</span>
-
-<span class="ne">NameError</span>: name &#39;cleaned_df&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 <div class="section" id="data-balance">
 <h2>data balance<a class="headerlink" href="#data-balance" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">HeartDisease</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cleaned_df</span><span class="o">.</span><span class="n">HeartDisease</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1012357356.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">cleaned_df</span><span class="o">.</span><span class="n">HeartDisease</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-
-<span class="ne">NameError</span>: name &#39;cleaned_df&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0    274456
+1     27261
+Name: HeartDisease, dtype: int64
 </pre></div>
-</div>
-</div>
 </div>
 <p>It is obvious that the numbers of the target value is signifciantly unbalanced, almost 10:1. So we have to handle this issue.</p>
 </div>
 <div class="section" id="undersampling">
 <h2>undersampling<a class="headerlink" href="#undersampling" title="Permalink to this headline">¶</a></h2>
 <p>Here, we use down sampling to solve the problem of data imbalance, that is, we randomly sample most classes until it is similar to the number of a few classes</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">minority</span> <span class="o">=</span> <span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">minority</span> <span class="o">=</span> <span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">majority</span> <span class="o">=</span> <span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
 
 <span class="n">undersampling_df</span> <span class="o">=</span> <span class="n">majority</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">minority</span><span class="p">)</span>
@@ -1182,27 +1083,21 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">undersampling_df</span><span class="o">.</span><span class="n">HeartDisease</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1007358348.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">minority</span> <span class="o">=</span> <span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">majority</span> <span class="o">=</span> <span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">undersampling_df</span> <span class="o">=</span> <span class="n">majority</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">minority</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">undersampling_df</span> <span class="o">=</span> <span class="n">undersampling_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cleaned_df</span><span class="p">[</span><span class="n">cleaned_df</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">])</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_296/1007358348.py:5: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  undersampling_df = undersampling_df.append(cleaned_df[cleaned_df[&quot;HeartDisease&quot;] == 1])
 
-<span class="ne">NameError</span>: name &#39;cleaned_df&#39; is not defined
+
+
+
+
+0    27261
+1    27261
+Name: HeartDisease, dtype: int64
 </pre></div>
-</div>
-</div>
 </div>
 <p>Now, we split the dataset into training dataset and test dataset.</p>
 <p>We split the total dataset into 3 parts: training set(70%), testing set(20%) and validation set(10%). To be more spcific, the training set and validation set are used to do the 10 fold cross validation method. And the test set is used to evaluate the generalization ability of the model, that is, the previous model uses the verification set to determine the super parameters, uses the training set to adjust the parameters, and finally uses a data set that has never been seen to judge whether the model is working.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select Features</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select Features</span>
 <span class="n">features</span> <span class="o">=</span> <span class="n">undersampling_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># Select Target</span>
@@ -1216,49 +1111,18 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape of testing feature:&quot;</span><span class="p">,</span> <span class="n">X_val</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/2637022810.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Select Features</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">features</span> <span class="o">=</span> <span class="n">undersampling_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Select Target</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">target</span> <span class="o">=</span> <span class="n">undersampling_df</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span>
-
-<span class="ne">NameError</span>: name &#39;undersampling_df&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Shape of training feature: (43617, 17)
+Shape of testing feature: (10905, 17)
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># split the training set and testing set</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># split the training set and testing set</span>
 <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
     <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">44</span>
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/943709023.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># split the training set and testing set</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
-<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">44</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;X&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
 <p>Then we build our KNN model, at the begining, we try the KNeighborsClassifier with the parameter n_neighbors=10. It means that when we calculate a testing point we need to consider the nearest 10 neighbour points.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">avg_pred</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">avg_pred</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
         <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">44</span>
@@ -1275,21 +1139,8 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy for model k=10:&quot;</span><span class="p">,</span> <span class="n">avg_pred</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/956603909.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
-<span class="ne">----&gt; </span><span class="mi">4</span>         <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">44</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-
-<span class="ne">NameError</span>: name &#39;X&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Accuracy for model k=10: 0.7223843268028345
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="hyperparameter-tuning-of-knn">
@@ -1301,9 +1152,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>weights: weight type used in KNN model, distance as weight standard and uniform</p></li>
 </ul>
 <p>We should carefully set the value of K when optimizing the super parameters, because in KNN, if the value of K is too small, that is, only the training samples in a small field are used for prediction, the model fitting ability is relatively strong, and the decision-making is as long as it closely follows the results of the nearest training samples (neighbors); On the contrary, if the value of K is too large, it may lead to under fitting</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">accuracy1_distance</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">accuracy1_distance</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">accuracy1_uniform</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">accuracy2_distance</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">accuracy2_uniform</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1372,27 +1221,18 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;accurancy&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/2975895960.py</span> in <span class="ni">&lt;cell line: 6&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
-<span class="ne">----&gt; </span><span class="mi">7</span>     <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">21</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1"># Calculating error for K values between 1 and 60</span>
-
-<span class="ne">NameError</span>: name &#39;X&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;accurancy&#39;)
 </pre></div>
 </div>
-</div>
+<p><img alt="png" src="_images/output_51_1.png" /></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.11</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">21</span>
+<span class="p">)</span>
+</pre></div>
 </div>
 <p>In the above codes, we test the paramter p for 1(manhattan_distance) and 2(minkowski_distance) respectively with k value from 1 to 35. Besides, we also consider the parameter weights.</p>
 <p>According to the result, we can see that the parameter p and weight has tiny effect on this data set. It is obvious that after k=19, the accurancy of the model will tend to be stable. So,in order to avoid under fitting we select our k as 19.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s2">&quot;uniform&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s2">&quot;uniform&quot;</span><span class="p">)</span>
 <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">pred</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_val</span><span class="p">)</span>
 <span class="n">value</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_val</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
@@ -1400,49 +1240,22 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy for model k=19:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/957651326.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">19</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s2">&quot;uniform&quot;</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">pred</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_val</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">value</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_val</span><span class="p">,</span> <span class="n">pred</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-
-<span class="ne">NameError</span>: name &#39;X&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Accuracy for model k=19: 0.7394773039889959
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="random-forest-a-id-section-3-2-a">
 <h2>3.2 Random forest<a id="section_3_2"></a><a class="headerlink" href="#random-forest-a-id-section-3-2-a" title="Permalink to this headline">¶</a></h2>
 <p>Random forest is an algorithm that integrates multiple trees through the idea of ensemble learning. Its basic unit is the decision tree. Each decision tree is a classifier (assuming that it is aimed at the classification problem), then for an input sample, n trees will have n classification results. The random forest integrates all the classified voting results, and specifies the category with the most votes as the final output</p>
 <p>At the beginning, we use the RandomForestClassifier with the default parameters</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># x_valtrain, x_test, y_valtrain, y_test = train_test_split(Xsc, y, test_size=0.2)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># x_valtrain, x_test, y_valtrain, y_test = train_test_split(Xsc, y, test_size=0.2)</span>
 <span class="n">rfm</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
 <span class="n">score</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">rfm</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;accurancy:&quot;</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/567448297.py</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># x_valtrain, x_test, y_valtrain, y_test = train_test_split(Xsc, y, test_size=0.2)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">rfm</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">score</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">rfm</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;accurancy:&quot;</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;X&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>accurancy: 0.7332461058855949
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="hyperparameter-tuning-of-random-forest">
@@ -1452,9 +1265,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>criterion: The function to measure the quality of a split. Supported criteria are “gini” for the Gini impurity and “entropy” for the information gain. Note: this parameter is tree-specific.</p></li>
 <li><p>max_depth: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples.</p></li>
 </ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores1</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scores1</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">scores2</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
     <span class="n">rfm1</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;gini&quot;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
@@ -1474,48 +1285,21 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;accurancy&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/3771332283.py</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">rfm2</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;entropy&quot;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
-<span class="ne">----&gt; </span><span class="mi">8</span>     <span class="n">s1</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">rfm1</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">s2</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">rfm2</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">scores1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s1</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-
-<span class="ne">NameError</span>: name &#39;X&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;accurancy&#39;)
 </pre></div>
 </div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_60_1.png" /></p>
 <p>According to the result, we can see that the parameter ‘criterion’ has less effect on the prediction result. As for the max_depth, we can see that it rises gradually from 1 and reaches the highest value at about 13. After that, the increase of this parameter will lead to a slight decline in prediction accuracy.</p>
 <p>Finally, we select the criterion=’gini’ and max_depth=13 as our final hyperparameter for the random forest model</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;gini&quot;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;gini&quot;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
 
 <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">test_pred</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_val</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test Set Accuracy:&quot;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_val</span><span class="p">,</span> <span class="n">test_pred</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/2195758481.py</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s2">&quot;gini&quot;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">test_pred</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_val</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test Set Accuracy:&quot;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_val</span><span class="p">,</span> <span class="n">test_pred</span><span class="p">))</span>
-
-<span class="ne">NameError</span>: name &#39;X&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Test Set Accuracy: 0.7450710683172856
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="principal-component-analysis-a-id-section-3-3-a">
@@ -1530,9 +1314,7 @@ const thebe_selector_output = ".output, .cell_output"
 (5) The eigenvalues are sorted in descending order, and the eigenvectors corresponding to the first k eigenvalues are selected to form a D × K-dimensional matrix w (where each column represents an eigenvector);<br />
 (6) Use this d × The eigenvector matrix of k maps the samples into a new subspace. Expressed by mathematical formula as y = wt × x. Where x is a D × A 1-dimensional vector represents a sample, and Y is K in the transformed new subspace × 1D samples.</p>
 <p>We first load the dataset and divide it into 2 classes, positive and negative. If that sample indicates the heart disease, then it’s a positive sample. And visulize the data in 4 dimension: (There are only 4 features showed.)</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span><span class="p">,</span> <span class="n">proj3d</span>
@@ -1578,52 +1360,36 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1616824602.py</span> in <span class="ni">&lt;cell line: 6&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span><span class="p">,</span> <span class="n">proj3d</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="ne">----&gt; </span><span class="mi">6</span> <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">cleaned_df</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">arr</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">split</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">arr</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]))[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;cleaned_df&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_68_0.png" /></p>
 <p>Calculate the d-dimensional mean vector (i.e. the mean of each dimension of the whole data set):</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mean</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
     <span class="n">mean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">arr</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]))</span>
 <span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mean</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/2052162456.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">mean</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">mean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">arr</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]))</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="n">mean</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;arr&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[[-2.41151729e-17]
+ [ 5.77733439e-01]
+ [ 7.15272921e-02]
+ [ 3.99844888e-02]
+ [ 4.82303457e-17]
+ [-3.61727593e-17]
+ [ 1.47008621e-01]
+ [ 4.70792166e-01]
+ [ 5.50390929e+00]
+ [ 7.73807906e-01]
+ [ 9.04874435e-01]
+ [ 2.36330734e-01]
+ [ 1.62384950e+00]
+ [-9.64606915e-17]
+ [ 8.58639056e-01]
+ [ 3.90299519e-02]
+ [ 9.02915646e-01]]
 </pre></div>
 </div>
-</div>
-</div>
 <p>And then we calculate the covariance matrix of the dataset:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scatter_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">17</span><span class="p">,</span> <span class="mi">17</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scatter_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">17</span><span class="p">,</span> <span class="mi">17</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
     <span class="n">scatter_matrix</span> <span class="o">+=</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span>
         <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
@@ -1653,26 +1419,8 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="c1"># print(&#39;Covariance Matrix:\n&#39;, cov_mat)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1426219876.py</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">scatter_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">17</span><span class="p">,</span> <span class="mi">17</span><span class="p">))</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">scatter_matrix</span> <span class="o">+=</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>         <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">mean</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;arr&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
 <p>After that, we should calculate the eigenvector and eigenvalue of the covariance matrix and show them:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">eig_val_sc</span><span class="p">,</span> <span class="n">eig_vec_sc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">scatter_matrix</span><span class="p">)</span>
 
@@ -1729,46 +1477,40 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1673319728.py</span> in <span class="ni">&lt;cell line: 5&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">eig_val_sc</span><span class="p">,</span> <span class="n">eig_vec_sc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">scatter_matrix</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> 
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">eig_val_cov</span><span class="p">,</span> <span class="n">eig_vec_cov</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">cov_mat</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># print(eig_vec_cov)</span>
-
-<span class="ne">NameError</span>: name &#39;cov_mat&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[2.01879415e+01 1.94657759e+00 4.75230357e-01 1.49031112e-01
+ 1.12535969e-01 7.34698441e-02 5.05095864e-02 4.77724840e-02
+ 3.40263129e-02 1.90029278e-02 1.69388833e-02 4.63709539e-04
+ 9.26142520e-03 2.80111702e-03 4.73326170e-03 5.58018815e-03
+ 6.71908183e-03]
 </pre></div>
 </div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_74_1.png" /></p>
 <p>The above image shows the values of the eigenvalues corresponding to the eigenvectors and compares them. We can find that three eigenvalues account for most of them, which means that only these three eigenvectors can map the original data to a lower dimensional space, retain most of the variance of the original data, and reduce the reconstruction error of the data.</p>
 <p>Now, we would use the first three eigenvalues to transform the original dataset into a lower dimensional space:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Phi</span> <span class="o">=</span> <span class="n">eig_vec_cov</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Phi</span> <span class="o">=</span> <span class="n">eig_vec_cov</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Phi</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/1027914981.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">eig_vec_cov</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">Phi</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;eig_vec_cov&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[[ 0.21474063  0.06440893 -0.28883643]
+ [ 0.08706776 -0.14890949  0.09728705]
+ [ 0.03286421  0.1079755  -0.11265841]
+ [ 0.01932713  0.06055895 -0.12562526]
+ [ 0.17329169  0.43077549 -0.13444659]
+ [ 0.18514132  0.38592923 -0.07285977]
+ [ 0.05812486  0.14667719  0.033654  ]
+ [ 0.09076526 -0.10034825  0.11329307]
+ [ 0.79512951 -0.37278735  0.05194985]
+ [ 0.29185521  0.64085637  0.16095242]
+ [ 0.058381   -0.04227126 -0.39618699]
+ [ 0.07717508  0.08907567  0.15890632]
+ [ 0.31664191 -0.08799775  0.43688045]
+ [ 0.19753837 -0.0646165  -0.57883997]
+ [ 0.04056248 -0.10527911 -0.21551574]
+ [ 0.01888958  0.05910836 -0.12559758]
+ [ 0.02945412 -0.07983402 -0.20572054]]
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pca_positive</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">positive</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pca_positive</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">positive</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi</span><span class="p">)</span>
 <span class="n">pca_negative</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">negative</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi</span><span class="p">)</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
@@ -1801,26 +1543,9 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/997281582.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">pca_positive</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">positive</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">pca_negative</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">negative</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s2">&quot;3d&quot;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;positive&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_78_0.png" /></p>
 <p>We have seen the PCA data in 3-dimension space, now we are going to look at a 2-dimension PCA data:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Phi_2d</span> <span class="o">=</span> <span class="n">eig_vec_cov</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Phi_2d</span> <span class="o">=</span> <span class="n">eig_vec_cov</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 <span class="n">pca_positive_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">positive</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi_2d</span><span class="p">)</span>
 <span class="n">pca_negative_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">negative</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi_2d</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">pca_positive_2d</span><span class="p">)</span>
@@ -1850,22 +1575,16 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/4023754717.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">Phi_2d</span> <span class="o">=</span> <span class="n">eig_vec_cov</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">pca_positive_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">positive</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi_2d</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">pca_negative_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">negative</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:],</span> <span class="n">Phi_2d</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="n">pca_positive_2d</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-
-<span class="ne">NameError</span>: name &#39;eig_vec_cov&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[[13.19342629  0.14267429]
+ [13.59853374  1.03085777]
+ [14.54705827  0.90731956]
+ ...
+ [13.23463342  0.20156568]
+ [14.98081866  1.0014157 ]
+ [13.20106226  0.14496461]]
 </pre></div>
 </div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_80_1.png" /></p>
 </div>
 <div class="section" id="k-means-clustering-analysis-a-id-section-3-4-a">
 <h2>3.4 K-means clustering analysis<a id="section_3_4"></a><a class="headerlink" href="#k-means-clustering-analysis-a-id-section-3-4-a" title="Permalink to this headline">¶</a></h2>
@@ -1875,9 +1594,7 @@ const thebe_selector_output = ".output, .cell_output"
 (2) According to the mean value of each clustering object (central object), calculate the distance between each object and these central objects, and re divide the corresponding objects according to the minimum distance;<br />
 (3) Recalculate the mean value of each cluster (central object);<br />
 (4) Calculate the standard measure function. When certain conditions are met, such as function convergence, the algorithm terminates; If the conditions are not met, return to step.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">K_Means</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">K_Means</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">tolerance</span><span class="o">=</span><span class="mf">0.00001</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">300</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">tolerance</span> <span class="o">=</span> <span class="n">tolerance</span>
@@ -1927,203 +1644,27 @@ const thebe_selector_output = ".output, .cell_output"
         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-</div>
 <p>Here, we apply the K-means clustering algorithm to the PCA data in 2D dimension, to see whether this algorithm can recognize the samples that are close to each other and divide the positive and negative samples.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pca_data_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">pca_positive_2d</span><span class="p">,</span> <span class="n">pca_negative_2d</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pca_data_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">pca_positive_2d</span><span class="p">,</span> <span class="n">pca_negative_2d</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
 <span class="n">k_means</span> <span class="o">=</span> <span class="n">K_Means</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">k_means</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pca_data_2d</span><span class="p">)</span>
 <span class="n">k_means</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/598742376.py</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">pca_data_2d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">pca_positive_2d</span><span class="p">,</span> <span class="n">pca_negative_2d</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">k_means</span> <span class="o">=</span> <span class="n">K_Means</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">k_means</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pca_data_2d</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">k_means</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
-
-<span class="ne">NameError</span>: name &#39;pca_positive_2d&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
+<p><img alt="png" src="_images/output_86_0.png" /></p>
 <p>Above picture shows the result of K-means clustering algorithm which is applied to the PCA data in 2d dimension. Compared to the real result showed in 3.3, we can see that this algorithm can correctly divide the samples when they hava a certain distance. While when the samples are closed, this algorithm has a very bad performance since it significant depends on the initial parameters.</p>
 </div>
 <div class="section" id="part4-conclusion-evaluation-a-id-chapter4-a">
 <h2>Part4. Conclusion &amp; Evaluation <a id="chapter4"></a><a class="headerlink" href="#part4-conclusion-evaluation-a-id-chapter4-a" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./data/heart_2020_cleaned.csv&quot;</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">heart_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">data</span><span class="o">=</span><span class="n">heart_df</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>HeartDisease</th>
-      <th>BMI</th>
-      <th>Smoking</th>
-      <th>AlcoholDrinking</th>
-      <th>Stroke</th>
-      <th>PhysicalHealth</th>
-      <th>MentalHealth</th>
-      <th>DiffWalking</th>
-      <th>Sex</th>
-      <th>AgeCategory</th>
-      <th>Race</th>
-      <th>Diabetic</th>
-      <th>PhysicalActivity</th>
-      <th>GenHealth</th>
-      <th>SleepTime</th>
-      <th>Asthma</th>
-      <th>KidneyDisease</th>
-      <th>SkinCancer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>No</td>
-      <td>16.60</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-      <td>3.0</td>
-      <td>30.0</td>
-      <td>No</td>
-      <td>Female</td>
-      <td>55-59</td>
-      <td>White</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Very good</td>
-      <td>5.0</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>No</td>
-      <td>20.34</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>No</td>
-      <td>Female</td>
-      <td>80 or older</td>
-      <td>White</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>Very good</td>
-      <td>7.0</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>No</td>
-      <td>26.58</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-      <td>20.0</td>
-      <td>30.0</td>
-      <td>No</td>
-      <td>Male</td>
-      <td>65-69</td>
-      <td>White</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Fair</td>
-      <td>8.0</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>No</td>
-      <td>24.21</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>No</td>
-      <td>Female</td>
-      <td>75-79</td>
-      <td>White</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Good</td>
-      <td>6.0</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>No</td>
-      <td>23.71</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>28.0</td>
-      <td>0.0</td>
-      <td>Yes</td>
-      <td>Female</td>
-      <td>40-44</td>
-      <td>White</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>Very good</td>
-      <td>8.0</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Smoking&quot;</span><span class="p">,</span> <span class="s1">&#39;AlcoholDrinking&#39;</span><span class="p">,</span> <span class="s1">&#39;Stroke&#39;</span><span class="p">,</span> <span class="s2">&quot;DiffWalking&quot;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;AgeCategory&#39;</span><span class="p">,</span> <span class="s1">&#39;Race&#39;</span><span class="p">,</span> <span class="s1">&#39;Diabetic&#39;</span><span class="p">,</span> <span class="s1">&#39;PhysicalActivity&#39;</span><span class="p">,</span> <span class="s1">&#39;GenHealth&#39;</span><span class="p">,</span> <span class="s1">&#39;Asthma&#39;</span><span class="p">,</span> <span class="s1">&#39;KidneyDisease&#39;</span><span class="p">,</span> <span class="s1">&#39;SkinCancer&#39;</span><span class="p">,</span> <span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Smoking&quot;</span><span class="p">,</span> <span class="s1">&#39;AlcoholDrinking&#39;</span><span class="p">,</span> <span class="s1">&#39;Stroke&#39;</span><span class="p">,</span> <span class="s2">&quot;DiffWalking&quot;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;AgeCategory&#39;</span><span class="p">,</span> <span class="s1">&#39;Race&#39;</span><span class="p">,</span> <span class="s1">&#39;Diabetic&#39;</span><span class="p">,</span> <span class="s1">&#39;PhysicalActivity&#39;</span><span class="p">,</span> <span class="s1">&#39;GenHealth&#39;</span><span class="p">,</span> <span class="s1">&#39;Asthma&#39;</span><span class="p">,</span> <span class="s1">&#39;KidneyDisease&#39;</span><span class="p">,</span> <span class="s1">&#39;SkinCancer&#39;</span><span class="p">,</span> <span class="s1">&#39;HeartDisease&#39;</span><span class="p">]</span>
 <span class="n">numerical_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">categorical_features</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plotting_function</span><span class="p">(</span><span class="n">feature</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plotting_function</span><span class="p">(</span><span class="n">feature</span><span class="p">):</span>
     <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
     <span class="n">heart_disease_by_feature</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Yes&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s2">&quot;HeartDisease&quot;</span><span class="p">])</span>
     <span class="n">heart_disease_by_feature</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s2">&quot;HeartDisease&quot;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -2141,23 +1682,19 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="n">plotting_function</span><span class="p">(</span><span class="n">categoric_col</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/Abstract_90_0.png" src="_images/Abstract_90_0.png" />
-<img alt="_images/Abstract_90_1.png" src="_images/Abstract_90_1.png" />
-<img alt="_images/Abstract_90_2.png" src="_images/Abstract_90_2.png" />
-<img alt="_images/Abstract_90_3.png" src="_images/Abstract_90_3.png" />
-<img alt="_images/Abstract_90_4.png" src="_images/Abstract_90_4.png" />
-<img alt="_images/Abstract_90_5.png" src="_images/Abstract_90_5.png" />
-<img alt="_images/Abstract_90_6.png" src="_images/Abstract_90_6.png" />
-<img alt="_images/Abstract_90_7.png" src="_images/Abstract_90_7.png" />
-<img alt="_images/Abstract_90_8.png" src="_images/Abstract_90_8.png" />
-<img alt="_images/Abstract_90_9.png" src="_images/Abstract_90_9.png" />
-<img alt="_images/Abstract_90_10.png" src="_images/Abstract_90_10.png" />
-<img alt="_images/Abstract_90_11.png" src="_images/Abstract_90_11.png" />
-<img alt="_images/Abstract_90_12.png" src="_images/Abstract_90_12.png" />
-</div>
-</div>
+<p><img alt="png" src="_images/output_91_0.png" /></p>
+<p><img alt="png" src="_images/output_91_1.png" /></p>
+<p><img alt="png" src="_images/output_91_2.png" /></p>
+<p><img alt="png" src="_images/output_91_3.png" /></p>
+<p><img alt="png" src="_images/output_91_4.png" /></p>
+<p><img alt="png" src="_images/output_91_5.png" /></p>
+<p><img alt="png" src="_images/output_91_6.png" /></p>
+<p><img alt="png" src="_images/output_91_7.png" /></p>
+<p><img alt="png" src="_images/output_91_8.png" /></p>
+<p><img alt="png" src="_images/output_91_9.png" /></p>
+<p><img alt="png" src="_images/output_91_10.png" /></p>
+<p><img alt="png" src="_images/output_91_11.png" /></p>
+<p><img alt="png" src="_images/output_91_12.png" /></p>
 </div>
 <div class="section" id="conclusions-a-id-section-4-1-a">
 <h2>4.1 Conclusions<a id="section_4_1"></a><a class="headerlink" href="#conclusions-a-id-section-4-1-a" title="Permalink to this headline">¶</a></h2>
@@ -2186,39 +1723,33 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="f1-score">
 <h2>F1 Score<a class="headerlink" href="#f1-score" title="Permalink to this headline">¶</a></h2>
-<p>\begin{aligned}
+<p><span class="math notranslate nohighlight">\(\begin{aligned}
 &amp;F_{1}=2 \cdot \frac{\text { precision } \cdot \text { recall }}{\text { precision }+\text { recall }} \
 &amp;F_{1}=2 \cdot \frac{\text { precision } \cdot \text { recall }}{\text { precision }+\text { recall }}
-\end{aligned}</p>
+\end{aligned}\)</span></p>
 <p>F1 Score also known as balanced f score, is defined as the harmonic average of accuracy rate and recall rate.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span> <span class="p">,</span> <span class="n">classification_report</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
 <span class="bp">cls</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="bp">cls</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">Y_train</span><span class="p">)</span>
+<span class="bp">cls</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
 <span class="n">prediction</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">predict</span><span class="p">((</span><span class="n">X_test</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mean Square Error testing model 1 &#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">prediction</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Classification Report: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">prediction</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mean Square Error testing model 1 &#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">prediction</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Classification Report: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">prediction</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/773824578.py</span> in <span class="ni">&lt;cell line: 6&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="bp">cls</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">6</span> <span class="bp">cls</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">Y_train</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">prediction</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">predict</span><span class="p">((</span><span class="n">X_test</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mean Square Error testing model 1 &#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span> <span class="n">prediction</span><span class="p">))</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Mean Square Error testing model 1  0.5002084201750729
+Classification Report: 
+               precision    recall  f1-score   support
 
-<span class="ne">NameError</span>: name &#39;X_train&#39; is not defined
+           0       0.51      0.50      0.50      2439
+           1       0.49      0.50      0.49      2359
+
+    accuracy                           0.50      4798
+   macro avg       0.50      0.50      0.50      4798
+weighted avg       0.50      0.50      0.50      4798
 </pre></div>
-</div>
-</div>
 </div>
 <p>Mean Square Error testing model 1  0.1092027019225218</p>
 <p>Classification Report:</p>
@@ -2234,9 +1765,7 @@ accuracy                           0.89    103926
 <div class="section" id="random-forest-analysis-a-id-section-4-3-a">
 <h2>4.3 Random Forest Analysis<a id="section_4_3"></a><a class="headerlink" href="#random-forest-analysis-a-id-section-4-3-a" title="Permalink to this headline">¶</a></h2>
 <p>We know that in the process of building the decision tree, we can get different decision trees by dividing the data with different characteristics. Moreover, different decision tree generation algorithms give priority to the features that can make the purity of the divided data set higher as the division standard. Therefore, through the generated decision tree, we can indirectly obtain the importance of the features in the data set. Therefore, this method is also directly provided in the random forest (decision tree) implemented by sklearn to obtain the importance ranking of features.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="n">t1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 
@@ -2263,21 +1792,10 @@ accuracy                           0.89    103926
 <span class="nb">print</span><span class="p">((</span><span class="n">t2</span><span class="o">-</span><span class="n">t1</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="nn">/tmp/ipykernel_1074/791717031.py</span> in <span class="ni">&lt;cell line: 19&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span>                           <span class="n">scoring</span> <span class="o">=</span> <span class="s2">&quot;accuracy&quot;</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span>                          <span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">19</span> <span class="n">gridsearch</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span> 
-<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="n">t2</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-
-<span class="ne">NameError</span>: name &#39;X_train&#39; is not defined
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Best params: {&#39;criterion&#39;: &#39;gini&#39;, &#39;max_depth&#39;: 9, &#39;max_features&#39;: &#39;auto&#39;, &#39;n_estimators&#39;: 25}
+Best Score: 0.5068137324502682
+0.08237375815709432
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="toctree-wrapper compound">
