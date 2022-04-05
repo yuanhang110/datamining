@@ -5,6 +5,10 @@
 
 [Online Access](https://yuanhang110.github.io/datamining/Abstract.html)
 
+Submit file include Group1Submit.ipynb and Group1Submit.pdf,
+
+click online access link above can access it directly.
+
 See the [JupyterBook](https://ccha23.gitlab1.pages.cs.cityu.edu.hk/cs5483jupyter/Abstract.html) for details of this repository.
 
 See the [nvidia-docker](./nvidia-docker.md) for configuration of GPU in Docker.

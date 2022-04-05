@@ -1,0 +1,882 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building the book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/github2gitlab.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modifying Contents" href="Contents.html" />
+    <link rel="prev" title="Preliminaries" href="Preliminaries.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.dio.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Abstract.html">
+   CS5483 Data Warehousing and Data Mining Project
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Introduction.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Preliminaries.html">
+   Preliminaries
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Building the book
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Contents.html">
+   Modifying Contents
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="References.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="_sources/Build.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Build.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/https://github.com/yuanhang110/datamining"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/https://github.com/yuanhang110/datamining/issues/new?title=Issue%20on%20page%20%2FBuild.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/yuanhang110/datamining/edit/main/docs/Build.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/yuanhang110/datamining/main?urlpath=lab/tree/docs/Build.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://cs5483.cs.cityu.edu.hk/hub/user-redirect/git-pull?repo=https://github.com/https://github.com/yuanhang110/datamining&urlpath=lab/tree/datamining/docs/Build.ipynb&branch=main"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compilation">
+   Compilation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Building the book</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#compilation">
+   Compilation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration">
+   Configuration
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="building-the-book">
+<h1>Building the book<a class="headerlink" href="#building-the-book" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="compilation">
+<h2>Compilation<a class="headerlink" href="#compilation" title="Permalink to this headline">¶</a></h2>
+<p>In the Jupyter interface, open the terminal (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">&gt;</span> <span class="pre">Terminal</span></code>) and run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./build.sh
+</pre></div>
+</div>
+<p>under the <em>repository root</em>. Answer <code class="docutils literal notranslate"><span class="pre">y</span></code> or simply press enter when prompted.</p>
+<p>To preview the book website,</p>
+<ul class="simple">
+<li><p>start the HTTP server (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">Launcher</span> <span class="pre">&gt;</span> <span class="pre">www</span></code>) and</p></li>
+<li><p>navigate to <code class="docutils literal notranslate"><span class="pre">www/cs5483jupyter</span></code>.</p></li>
+</ul>
+<p>The source code of <code class="docutils literal notranslate"><span class="pre">build.sh</span></code> is shown below:</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><style>pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.output_html .hll { background-color: #ffffcc }
+.output_html { background: #f8f8f8; }
+.output_html .c { color: #3D7B7B; font-style: italic } /* Comment */
+.output_html .err { border: 1px solid #FF0000 } /* Error */
+.output_html .k { color: #008000; font-weight: bold } /* Keyword */
+.output_html .o { color: #666666 } /* Operator */
+.output_html .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.output_html .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.output_html .cp { color: #9C6500 } /* Comment.Preproc */
+.output_html .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.output_html .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.output_html .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.output_html .gd { color: #A00000 } /* Generic.Deleted */
+.output_html .ge { font-style: italic } /* Generic.Emph */
+.output_html .gr { color: #E40000 } /* Generic.Error */
+.output_html .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.output_html .gi { color: #008400 } /* Generic.Inserted */
+.output_html .go { color: #717171 } /* Generic.Output */
+.output_html .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.output_html .gs { font-weight: bold } /* Generic.Strong */
+.output_html .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.output_html .gt { color: #0044DD } /* Generic.Traceback */
+.output_html .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.output_html .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.output_html .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.output_html .kp { color: #008000 } /* Keyword.Pseudo */
+.output_html .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.output_html .kt { color: #B00040 } /* Keyword.Type */
+.output_html .m { color: #666666 } /* Literal.Number */
+.output_html .s { color: #BA2121 } /* Literal.String */
+.output_html .na { color: #687822 } /* Name.Attribute */
+.output_html .nb { color: #008000 } /* Name.Builtin */
+.output_html .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.output_html .no { color: #880000 } /* Name.Constant */
+.output_html .nd { color: #AA22FF } /* Name.Decorator */
+.output_html .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.output_html .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.output_html .nf { color: #0000FF } /* Name.Function */
+.output_html .nl { color: #767600 } /* Name.Label */
+.output_html .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.output_html .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.output_html .nv { color: #19177C } /* Name.Variable */
+.output_html .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.output_html .w { color: #bbbbbb } /* Text.Whitespace */
+.output_html .mb { color: #666666 } /* Literal.Number.Bin */
+.output_html .mf { color: #666666 } /* Literal.Number.Float */
+.output_html .mh { color: #666666 } /* Literal.Number.Hex */
+.output_html .mi { color: #666666 } /* Literal.Number.Integer */
+.output_html .mo { color: #666666 } /* Literal.Number.Oct */
+.output_html .sa { color: #BA2121 } /* Literal.String.Affix */
+.output_html .sb { color: #BA2121 } /* Literal.String.Backtick */
+.output_html .sc { color: #BA2121 } /* Literal.String.Char */
+.output_html .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.output_html .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.output_html .s2 { color: #BA2121 } /* Literal.String.Double */
+.output_html .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.output_html .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.output_html .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.output_html .sx { color: #008000 } /* Literal.String.Other */
+.output_html .sr { color: #A45A77 } /* Literal.String.Regex */
+.output_html .s1 { color: #BA2121 } /* Literal.String.Single */
+.output_html .ss { color: #19177C } /* Literal.String.Symbol */
+.output_html .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.output_html .fm { color: #0000FF } /* Name.Function.Magic */
+.output_html .vc { color: #19177C } /* Name.Variable.Class */
+.output_html .vg { color: #19177C } /* Name.Variable.Global */
+.output_html .vi { color: #19177C } /* Name.Variable.Instance */
+.output_html .vm { color: #19177C } /* Name.Variable.Magic */
+.output_html .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="nv">cmds</span><span class="o">=(</span>
+    <span class="s2">&quot;jupyter-book clean docs&quot;</span>
+    <span class="s2">&quot;jupyter-book build docs&quot;</span>
+    <span class="s2">&quot;rm -rf \&quot;</span><span class="si">${</span><span class="nv">JUPYTER_SERVER_ROOT</span><span class="si">}</span><span class="s2">/www/cs5483jupyter\&quot; &amp;&amp; mkdir --parents \$_ &amp;&amp; cp -rf docs/_build/html/* \$_&quot;</span>
+    <span class="o">)</span> 
+
+<span class="k">if</span> <span class="o">[</span> -z <span class="si">${</span><span class="nv">JUPYTER_SERVER_ROOT</span><span class="si">}</span> <span class="o">]</span>
+<span class="k">then</span>
+
+    <span class="nb">echo</span> <span class="s2">&quot;[Error] Must run in a jupyter terminal with \$JUPYTER_SERVER_ROOT defined.&quot;</span> <span class="m">1</span>&gt;<span class="p">&amp;</span><span class="m">2</span>
+    <span class="nb">exit</span> <span class="m">1</span>
+
+<span class="k">else</span>
+
+    <span class="k">for</span> cmd <span class="k">in</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">cmds</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">do</span>
+        <span class="nb">read</span> -r -p <span class="s2">&quot;</span><span class="si">${</span><span class="nv">cmd</span><span class="si">}</span><span class="s2">?[Y/n] &quot;</span> input
+
+        <span class="k">case</span> <span class="nv">$input</span> <span class="k">in</span>
+            <span class="o">[</span>yY<span class="o">][</span>eE<span class="o">][</span>sS<span class="o">]</span><span class="p">|</span><span class="o">[</span>yY<span class="o">]</span><span class="p">|</span><span class="s1">&#39;&#39;</span><span class="o">)</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Executing...&quot;</span>
+        <span class="nb">eval</span> <span class="nv">$cmd</span>
+        <span class="p">;;</span>
+            <span class="o">[</span>nN<span class="o">][</span>oO<span class="o">]</span><span class="p">|</span><span class="o">[</span>nN<span class="o">])</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Skipped...&quot;</span>
+            <span class="p">;;</span>
+            *<span class="o">)</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Invalid input...&quot;</span>
+        <span class="nb">exit</span> <span class="m">1</span>
+        <span class="p">;;</span>
+        <span class="k">esac</span>
+    <span class="k">done</span>
+
+<span class="k">fi</span>
+</pre></div>
+</div></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">clean</span> <span class="pre">docs</span></code> to empty previously built book.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">docs</span></code> to build the book.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">\&quot;${JUPYTER_SERVER_ROOT}/www/cs5483jupyter\&quot;</span> <span class="pre">&amp;&amp;</span> <span class="pre">mkdir</span> <span class="pre">--parents</span> <span class="pre">\$_</span> <span class="pre">&amp;&amp;</span> <span class="pre">cp</span> <span class="pre">-rf</span> <span class="pre">docs/_build/html/*</span> <span class="pre">\$_</span></code> moves the book to the folder <code class="docutils literal notranslate"><span class="pre">www/cs5483jupyter</span></code> under the Jupyter Server Root for the HTTP server to serve the book website.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>You can run <code class="docutils literal notranslate"><span class="pre">yes</span> <span class="pre">|</span> <span class="pre">./build.sh</span></code> to automatically answer <code class="docutils literal notranslate"><span class="pre">y</span></code> when prompted.</p></li>
+<li><p>After rebuilding the book, you can refresh an existing preview page to update its content.</p></li>
+</ul>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/reference/cli.html">JupyterBook docs on CLI reference</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>If you use this book as a template in your own repository to host the book, you should edit the configuration file <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> under the <code class="docutils literal notranslate"><span class="pre">docs</span></code> folder:</p>
+<div class="cell tag_output_scroll tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><style>pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.output_html .hll { background-color: #ffffcc }
+.output_html { background: #f8f8f8; }
+.output_html .c { color: #3D7B7B; font-style: italic } /* Comment */
+.output_html .err { border: 1px solid #FF0000 } /* Error */
+.output_html .k { color: #008000; font-weight: bold } /* Keyword */
+.output_html .o { color: #666666 } /* Operator */
+.output_html .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.output_html .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.output_html .cp { color: #9C6500 } /* Comment.Preproc */
+.output_html .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.output_html .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.output_html .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.output_html .gd { color: #A00000 } /* Generic.Deleted */
+.output_html .ge { font-style: italic } /* Generic.Emph */
+.output_html .gr { color: #E40000 } /* Generic.Error */
+.output_html .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.output_html .gi { color: #008400 } /* Generic.Inserted */
+.output_html .go { color: #717171 } /* Generic.Output */
+.output_html .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.output_html .gs { font-weight: bold } /* Generic.Strong */
+.output_html .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.output_html .gt { color: #0044DD } /* Generic.Traceback */
+.output_html .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.output_html .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.output_html .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.output_html .kp { color: #008000 } /* Keyword.Pseudo */
+.output_html .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.output_html .kt { color: #B00040 } /* Keyword.Type */
+.output_html .m { color: #666666 } /* Literal.Number */
+.output_html .s { color: #BA2121 } /* Literal.String */
+.output_html .na { color: #687822 } /* Name.Attribute */
+.output_html .nb { color: #008000 } /* Name.Builtin */
+.output_html .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.output_html .no { color: #880000 } /* Name.Constant */
+.output_html .nd { color: #AA22FF } /* Name.Decorator */
+.output_html .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.output_html .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.output_html .nf { color: #0000FF } /* Name.Function */
+.output_html .nl { color: #767600 } /* Name.Label */
+.output_html .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.output_html .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.output_html .nv { color: #19177C } /* Name.Variable */
+.output_html .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.output_html .w { color: #bbbbbb } /* Text.Whitespace */
+.output_html .mb { color: #666666 } /* Literal.Number.Bin */
+.output_html .mf { color: #666666 } /* Literal.Number.Float */
+.output_html .mh { color: #666666 } /* Literal.Number.Hex */
+.output_html .mi { color: #666666 } /* Literal.Number.Integer */
+.output_html .mo { color: #666666 } /* Literal.Number.Oct */
+.output_html .sa { color: #BA2121 } /* Literal.String.Affix */
+.output_html .sb { color: #BA2121 } /* Literal.String.Backtick */
+.output_html .sc { color: #BA2121 } /* Literal.String.Char */
+.output_html .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.output_html .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.output_html .s2 { color: #BA2121 } /* Literal.String.Double */
+.output_html .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.output_html .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.output_html .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.output_html .sx { color: #008000 } /* Literal.String.Other */
+.output_html .sr { color: #A45A77 } /* Literal.String.Regex */
+.output_html .s1 { color: #BA2121 } /* Literal.String.Single */
+.output_html .ss { color: #19177C } /* Literal.String.Symbol */
+.output_html .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.output_html .fm { color: #0000FF } /* Name.Function.Magic */
+.output_html .vc { color: #19177C } /* Name.Variable.Class */
+.output_html .vg { color: #19177C } /* Name.Variable.Global */
+.output_html .vi { color: #19177C } /* Name.Variable.Instance */
+.output_html .vm { color: #19177C } /* Name.Variable.Magic */
+.output_html .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="highlight"><pre><span></span><span class="c1">#######################################################################################</span><span class="w"></span>
+<span class="c1"># Book settings</span><span class="w"></span>
+<span class="nt">title                       </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"></span>
+<span class="nt">author                      </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Chung Chan</span><span class="w">  </span><span class="c1"># The author of the book</span><span class="w"></span>
+<span class="nt">copyright                   </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021&quot;</span><span class="w">      </span><span class="c1"># Copyright year to be placed in the footer</span><span class="w"></span>
+<span class="nt">logo                        </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">logo.dio.svg</span><span class="w">  </span><span class="c1"># A path to the book logo</span><span class="w"></span>
+<span class="c1"># Patterns to skip when building the book. Can be glob-style (e.g. &quot;*skip.ipynb&quot;)</span><span class="w"></span>
+<span class="nt">exclude_patterns            </span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">_build</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">Thumbs.db</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">.DS_Store</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;**.ipynb_checkpoints&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="c1"># Auto-exclude files not in the toc</span><span class="w"></span>
+<span class="nt">only_build_toc_files        </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="c1"># Add a bibtex file so that we can create citations</span><span class="w"></span>
+<span class="nt">bibtex_bibfiles</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ref.bib</span><span class="w"></span>
+
+<span class="c1">#######################################################################################</span><span class="w"></span>
+<span class="c1"># Execution settings</span><span class="w"></span>
+<span class="nt">execute</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">execute_notebooks         </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">auto</span><span class="w">  </span><span class="c1"># Whether to execute notebooks at build time. Must be one of (&quot;auto&quot;, &quot;force&quot;, &quot;cache&quot;, &quot;off&quot;)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">cache                     </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w">    </span><span class="c1"># A path to the jupyter cache that will be used to store execution artifacts. Defaults to `_build/.jupyter_cache/`</span><span class="w"></span>
+<span class="w">  </span><span class="nt">exclude_patterns          </span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span><span class="w">    </span><span class="c1"># A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">timeout                   </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span><span class="w">    </span><span class="c1"># The maximum time (in seconds) each notebook cell is allowed to run.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">run_in_temp               </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"> </span><span class="c1"># If `True`, then a temporary directory will be created and used as the command working directory (cwd),</span><span class="w"></span>
+<span class="w">                                    </span><span class="c1"># otherwise the notebook&#39;s parent directory will be the cwd.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">allow_errors              </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">stderr_output             </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">show</span><span class="w">  </span><span class="c1"># One of &#39;show&#39;, &#39;remove&#39;, &#39;remove-warn&#39;, &#39;warn&#39;, &#39;error&#39;, &#39;severe&#39;</span><span class="w"></span>
+
+
+<span class="c1">#######################################################################################</span><span class="w"></span>
+<span class="c1"># Parse and render settings</span><span class="w"></span>
+<span class="nt">parse</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">myst_url_schemes          </span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">mailto</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">http</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">https</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># URI schemes that will be recognised as external URLs in Markdown links</span><span class="w"></span>
+<span class="w">  </span><span class="nt">myst_enable_extensions    </span><span class="p">:</span><span class="w">    </span>
+<span class="w">    </span><span class="c1"># - amsmath</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">colon_fence</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># - deflist</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dollarmath</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># - html_admonition</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># - html_image</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">linkify</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># - replacements</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># - smartquotes</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">substitution</span><span class="w"></span>
+<span class="w">  </span><span class="nt">myst_dmath_allow_labels   </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="nt">myst_dmath_double_inline  </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># To allow display math (i.e. $$) within an inline context</span><span class="w"></span>
+
+<span class="c1">#######################################################################################</span><span class="w"></span>
+<span class="c1"># HTML-specific settings</span><span class="w"></span>
+<span class="nt">html</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">favicon                   </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w">  </span><span class="c1"># A path to a favicon image</span><span class="w"></span>
+<span class="w">  </span><span class="nt">use_edit_page_button      </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># Whether to add an &quot;edit this page&quot; button to pages. If `true`, repository information in repository: must be filled in</span><span class="w"></span>
+<span class="w">  </span><span class="nt">use_repository_button     </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># Whether to add a link to your repository button</span><span class="w"></span>
+<span class="w">  </span><span class="nt">use_issues_button         </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># Whether to add an &quot;open an issue&quot; button</span><span class="w"></span>
+<span class="w">  </span><span class="nt">extra_navbar              </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Powered by &lt;a href=&quot;https://jupyterbook.org&quot;&gt;Jupyter Book&lt;/a&gt;</span><span class="w">  </span><span class="c1"># Will be displayed underneath the left navbar.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">extra_footer              </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w">  </span><span class="c1"># Will be displayed underneath the footer.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">google_analytics_id       </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w">  </span><span class="c1"># A GA id that can be used to track book views.</span><span class="w"></span>
+<span class="w">  </span><span class="nt">home_page_in_navbar       </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># Whether to include your home page in the left Navigation Bar</span><span class="w"></span>
+<span class="w">  </span><span class="nt">baseurl                   </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w">  </span><span class="c1"># The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/</span><span class="w"></span>
+<span class="w">  </span><span class="nt">comments</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hypothesis              </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="nt">utterances              </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+
+<span class="c1">#######################################################################################</span><span class="w"></span>
+<span class="c1"># LaTeX-specific settings</span><span class="w"></span>
+<span class="nt">latex</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">latex_engine              </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">xelatex</span><span class="w">  </span><span class="c1"># one of &#39;pdflatex&#39;, &#39;xelatex&#39; (recommended for unicode), &#39;luatex&#39;, &#39;platex&#39;, &#39;uplatex&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">use_jupyterbook_latex     </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span><span class="c1"># use sphinx-jupyterbook-latex for pdf builds as default</span><span class="w"></span>
+<span class="w">  </span>
+<span class="c1">#######################################################################################</span><span class="w"></span>
+<span class="c1"># Launch button settings</span><span class="w"></span>
+<span class="nt">launch_buttons</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">notebook_interface        </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jupyterlab</span><span class="w">  </span><span class="c1"># The interface interactive links will activate [&quot;classic&quot;, &quot;jupyterlab&quot;]</span><span class="w"></span>
+<span class="w">  </span><span class="nt">jupyterhub_url            </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://cs5483.cs.cityu.edu.hk&quot;</span><span class="w">  </span><span class="c1"># The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">binderhub_url             </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://mybinder.org&quot;</span><span class="w"> </span><span class="c1"># https://mybinder.org #https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">thebe                     </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">  </span><span class="c1"># Add a thebe button to pages (requires the repository to run on Binder)</span><span class="w"></span>
+<span class="w">  </span><span class="nt">colab_url                 </span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1">#https://colab.research.google.com # The URL of Google Colab (https://colab.research.google.com)</span><span class="w"></span>
+<span class="w">  </span>
+<span class="c1"># Information about where the book exists on the web</span><span class="w"></span>
+<span class="nt">repository</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://github.com/https://github.com/yuanhang110/datamining&quot;</span><span class="w">  </span><span class="c1"># Online location of your book</span><span class="w"></span>
+<span class="w">  </span><span class="nt">path_to_book</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;docs&quot;</span><span class="w">  </span><span class="c1"># An optional path to your book, defaults to repo root</span><span class="w"></span>
+<span class="w">  </span><span class="nt">branch</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;main&quot;</span><span class="w">  </span><span class="c1"># An optional branch, defaults to `master`</span><span class="w"></span>
+
+<span class="c1">#######################################################################################</span><span class="w"></span>
+<span class="c1"># Advanced and power-user settings</span><span class="w"></span>
+<span class="nt">sphinx</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">config                    </span><span class="p">:</span><span class="w"> </span><span class="c1"># key-value pairs to directly over-ride the Sphinx configuration</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># mathjax_path              : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span><span class="w"></span>
+<span class="w">    </span><span class="nt">mathjax3_config</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">loader</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">load</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;[tex]/action&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/ams&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/amscd&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/bbox&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/boldsymbol&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/braket&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/bussproofs&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/cancel&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="c1"># &#39;[tex]/cases&#39;,   # missing empheq.js</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/centernot&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/color&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/colorv2&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/colortbl&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="c1"># &#39;[tex]/empheq&#39;,   # missing empheq.js</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/enclose&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/extpfeil&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/gensymb&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/html&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/mathtools&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/mhchem&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/newcommand&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/noerrors&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/noundefined&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/physics&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/upgreek&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/unicode&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/verb&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/configmacros&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/tagformat&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/textcomp&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/textmacros&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/setoptions&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;[tex]/physics&#39;</span><span class="w"></span>
+<span class="w">              </span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">      </span><span class="nt">tex</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">macros</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">mc</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\mathcal{#1}&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">1</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">          </span><span class="nt">rsfs</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\mathsc{#1}&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">1</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">          </span><span class="nt">R</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\mathsf{#1}&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">1</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">          </span><span class="nt">M</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\boldsymbol{#1}&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">1</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">          </span><span class="nt">RM</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\R{\\M{#1}}&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">1</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">        </span><span class="nt">packages</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;base&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;action&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;ams&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;amscd&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;bbox&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;boldsymbol&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;braket&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;bussproofs&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;cancel&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;cases&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;centernot&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;color&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;colortbl&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="c1"># &#39;empheq&#39;,   # missing empheq.js</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;enclose&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;extpfeil&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;gensymb&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;mathtools&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;mhchem&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;newcommand&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;noerrors&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;noundefined&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;upgreek&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;unicode&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;verb&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;configmacros&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;tagformat&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;textcomp&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;textmacros&#39;</span><span class="p p-Indicator">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&#39;physics&#39;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">    </span><span class="nt">bibtex_default_style</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;unsrt&quot;</span><span class="w"></span>
+<span class="c1">#     latex_toplevel_sectioning : &#39;part&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">extra_extensions          </span><span class="p">:</span><span class="w">   </span><span class="c1"># A list of extra extensions to load by Sphinx (added to those already used by JB).</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx_proof</span><span class="w"></span>
+<span class="w">  </span><span class="nt">local_extensions          </span><span class="p">:</span><span class="w">   </span><span class="c1"># A list of local extensions to load by sphinx specified by &quot;name: path&quot; items</span><span class="w"></span>
+</pre></div>
+</div></div>
+</div>
+<p>In particular, you should change the repository url is specified by the lines:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">repository</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://github.com/ccha23/cs5483jupyter&quot;</span><span class="w">  </span><span class="c1"># Online location of your book</span><span class="w"></span>
+</pre></div>
+</div>
+<p>to your repository while retaining <code class="docutils literal notranslate"><span class="pre">github.com</span></code> as the base url, i.e.,</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">repository</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://github.com/{repo</span><span class="nv"> </span><span class="s">path}&quot;</span><span class="w">  </span><span class="c1"># Online location of your book</span><span class="w"></span>
+</pre></div>
+</div>
+<p>where the repository is actually hosted at <code class="docutils literal notranslate"><span class="pre">https://gitlab1.cs.cityu.edu.hk/{repo</span> <span class="pre">path}</span></code>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This is a hack to <a class="reference external" href="https://github.com/executablebooks/jupyter-book/issues/1416">support GitLab pages</a>:</p>
+<ul class="simple">
+<li><p>Using <code class="docutils literal notranslate"><span class="pre">github.com</span></code> tricks <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> to enable the launch buttons and other repository-related buttons.</p></li>
+<li><p>The javascript <code class="docutils literal notranslate"><span class="pre">github2gitlab.js</span></code> under the folder <code class="docutils literal notranslate"><span class="pre">_static</span></code> then replaces <code class="docutils literal notranslate"><span class="pre">github.com</span></code> in the buttons by <code class="docutils literal notranslate"><span class="pre">gitlab1.cs.cityu.edu.hk</span></code>.</p></li>
+</ul>
+<p>If you host your repository in other git servers, you should also edit <code class="docutils literal notranslate"><span class="pre">github2gitlab.js</span></code> to substitute <code class="docutils literal notranslate"><span class="pre">gitlab1.cs.cityu.edu.hk</span></code> with the appropriate server name.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Code</span><span class="p">(</span><span class="s1">&#39;_static/github2gitlab.js&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.output_html .hll { background-color: #ffffcc }
+.output_html { background: #f8f8f8; }
+.output_html .c { color: #3D7B7B; font-style: italic } /* Comment */
+.output_html .err { border: 1px solid #FF0000 } /* Error */
+.output_html .k { color: #008000; font-weight: bold } /* Keyword */
+.output_html .o { color: #666666 } /* Operator */
+.output_html .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.output_html .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.output_html .cp { color: #9C6500 } /* Comment.Preproc */
+.output_html .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.output_html .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.output_html .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.output_html .gd { color: #A00000 } /* Generic.Deleted */
+.output_html .ge { font-style: italic } /* Generic.Emph */
+.output_html .gr { color: #E40000 } /* Generic.Error */
+.output_html .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.output_html .gi { color: #008400 } /* Generic.Inserted */
+.output_html .go { color: #717171 } /* Generic.Output */
+.output_html .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.output_html .gs { font-weight: bold } /* Generic.Strong */
+.output_html .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.output_html .gt { color: #0044DD } /* Generic.Traceback */
+.output_html .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.output_html .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.output_html .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.output_html .kp { color: #008000 } /* Keyword.Pseudo */
+.output_html .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.output_html .kt { color: #B00040 } /* Keyword.Type */
+.output_html .m { color: #666666 } /* Literal.Number */
+.output_html .s { color: #BA2121 } /* Literal.String */
+.output_html .na { color: #687822 } /* Name.Attribute */
+.output_html .nb { color: #008000 } /* Name.Builtin */
+.output_html .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.output_html .no { color: #880000 } /* Name.Constant */
+.output_html .nd { color: #AA22FF } /* Name.Decorator */
+.output_html .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.output_html .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.output_html .nf { color: #0000FF } /* Name.Function */
+.output_html .nl { color: #767600 } /* Name.Label */
+.output_html .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.output_html .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.output_html .nv { color: #19177C } /* Name.Variable */
+.output_html .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.output_html .w { color: #bbbbbb } /* Text.Whitespace */
+.output_html .mb { color: #666666 } /* Literal.Number.Bin */
+.output_html .mf { color: #666666 } /* Literal.Number.Float */
+.output_html .mh { color: #666666 } /* Literal.Number.Hex */
+.output_html .mi { color: #666666 } /* Literal.Number.Integer */
+.output_html .mo { color: #666666 } /* Literal.Number.Oct */
+.output_html .sa { color: #BA2121 } /* Literal.String.Affix */
+.output_html .sb { color: #BA2121 } /* Literal.String.Backtick */
+.output_html .sc { color: #BA2121 } /* Literal.String.Char */
+.output_html .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.output_html .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.output_html .s2 { color: #BA2121 } /* Literal.String.Double */
+.output_html .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.output_html .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.output_html .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.output_html .sx { color: #008000 } /* Literal.String.Other */
+.output_html .sr { color: #A45A77 } /* Literal.String.Regex */
+.output_html .s1 { color: #BA2121 } /* Literal.String.Single */
+.output_html .ss { color: #19177C } /* Literal.String.Symbol */
+.output_html .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.output_html .fm { color: #0000FF } /* Name.Function.Magic */
+.output_html .vc { color: #19177C } /* Name.Variable.Class */
+.output_html .vg { color: #19177C } /* Name.Variable.Global */
+.output_html .vi { color: #19177C } /* Name.Variable.Instance */
+.output_html .vm { color: #19177C } /* Name.Variable.Magic */
+.output_html .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="highlight"><pre><span></span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;load&quot;</span><span class="p">,</span> 
+    <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;a.binder-button&quot;</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="nx">re</span> <span class="o">=</span> <span class="sr">/(https:\/\/mybinder\.org.*\/)gh\/(.*\/)(.*)\/(.*)\?(urlpath=lab\/tree\/)(.*)/</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">re</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">,</span> <span class="nx">p3</span><span class="p">,</span> <span class="nx">p4</span><span class="p">,</span> <span class="nx">p5</span><span class="p">,</span> <span class="nx">p6</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">p2_</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://gitlab1.cs.cityu.edu.hk&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nx">p2</span><span class="p">,</span> <span class="nx">p3</span><span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+                <span class="k">return</span> <span class="p">[</span><span class="nx">p1</span><span class="p">,</span> <span class="s1">&#39;git/&#39;</span><span class="p">,</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">p2_</span><span class="p">),</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nx">p4</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="s1">&#39;urlpath=git-pull?&#39;</span><span class="p">,</span> 
+                    <span class="nb">encodeURIComponent</span><span class="p">([</span><span class="s1">&#39;repo=&#39;</span><span class="p">,</span> <span class="nx">p2_</span><span class="p">,</span> <span class="s1">&#39;&amp;branch=&#39;</span><span class="p">,</span> <span class="nx">p4</span><span class="p">,</span><span class="s1">&#39;&amp;&#39;</span><span class="p">,</span> <span class="nx">p5</span><span class="p">,</span> <span class="nx">p3</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>  <span class="nx">p6</span><span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">))].</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+            <span class="p">})</span>
+        <span class="p">});</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;a.jupyterhub-button&quot;</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="nx">re</span> <span class="o">=</span> <span class="sr">/(https:\/\/.*)https:\/\/github\.com(\/.*)/</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">re</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">p1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="p">[</span><span class="nx">p1</span><span class="p">,</span> <span class="s1">&#39;https://gitlab1.cs.cityu.edu.hk&#39;</span><span class="p">,</span> <span class="nx">p2</span><span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+            <span class="p">})</span>
+        <span class="p">});</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;a.repository-button,a.issues-button,a.edit-button&quot;</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="nx">re</span> <span class="o">=</span> <span class="sr">/https:\/\/github\.com(\/.*)/</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">re</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">match</span><span class="p">,</span> <span class="nx">p1</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="nx">string</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;https://gitlab1.cs.cityu.edu.hk&#39;</span><span class="p">,</span> <span class="nx">p1</span><span class="p">].</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+            <span class="p">})</span>
+        <span class="p">});</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.dropdown-buttons-trigger i.fa-github&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;fa-gitlab&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;fa-github&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/customize/config.html">JupyterBook docs on Config reference</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Preliminaries.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Preliminaries</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Contents.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Modifying Contents</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Chung Chan<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

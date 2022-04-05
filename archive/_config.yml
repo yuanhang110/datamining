@@ -76,7 +76,7 @@ launch_buttons:
   
 # Information about where the book exists on the web
 repository:
-  url: "https://github.com/ccha23/cs5483jupyter"  # Online location of your book
+  url: "https://github.com/https://github.com/yuanhang110/datamining"  # Online location of your book
   path_to_book: "docs"  # An optional path to your book, defaults to repo root
   branch: "main"  # An optional branch, defaults to `master`
 
